@@ -1,0 +1,329 @@
+body {
+    background-color: rgb(240, 243, 245);
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+/*BAGIAN HEADER */
+
+header{
+    /* padding-inline: 10px; */
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+}
+
+main {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+.left-img {
+    height: 100vh;
+    width: 50%;
+    display: block;
+    object-fit: cover;
+    mask: linear-gradient(90deg, white, transparent);
+}
+
+.h1{
+    background-color: white;
+    color: #D91656;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.h2{
+    color: #FF6600;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    padding-right: 200px;
+}
+
+.h2 a{
+    height: 30px;
+    text-decoration: none;
+    color: #FF6600;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: right;
+}
+
+.h3{
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 30px;
+    padding-left: 100px;
+    color: #FF6600;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.458);
+}
+
+/*BAGIAN TAKE A SIP*/
+
+.title {
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.k4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color: #FF6600;
+    margin: 0;
+}
+
+.k5{
+    margin: 0;
+    font-size: 20px;
+}
+
+/*BAGIAN INFORMASI*/
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.konten{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.bb{
+    flex: 1;
+    padding-right: 80px;
+}
+
+.b1{
+    border-left: 2px solid black;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 25;
+}
+
+.b2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color: #FF6600;
+    margin: 0;
+}
+
+.p1{
+    flex: 2;
+    text-align: justify;
+}
+
+.p1 p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*BAGIAN CEO PAWAS*/
+
+.s1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+}
+
+.ceo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    flex-direction: row-reverse;
+}
+
+.cc{
+    flex: 1;
+    padding-left: 80px;
+}
+
+.c1{
+    border-left: 2px solid black;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 25;
+}
+
+.c2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color: #FF6600;
+    margin: 0;
+}
+
+/*BAGIAN KOTAK CEO*/
+
+.d1{
+    flex: 2;
+    background-color: rgb(251, 249, 246);
+    border-radius: 30px;
+    border: inset black 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.d2{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    border: solid black 7px;
+    object-fit: cover;
+}
+
+.d3{
+    font-size: 20px;
+    text-align: justify;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.d4{
+    width: 40px;
+    height: 40px;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    padding-top: 10px;
+}
+
+.d4:hover{
+    transform: scale(115%);
+}
+
+#d4-container {
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.d5{
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 20px;
+    padding: 0;
+}
+
+.d6{
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.d7{
+    background-color: white;
+    border-radius: 20px;
+    border: solid black 1px;
+    width: fit-content;
+    margin-block: 20px;
+    margin-inline: auto;
+    padding: 10px;
+}
+
+/*BAGIAN FOOTER KOPIE*/
+
+footer{
+    background-color: #ffffff;
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+  
+.e1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+  
+.e2{
+    width: 30%;
+}
+  
+.logo img{
+    max-width: 100px;
+}
+  
+.e2 h4{
+    font-size: 1.2em;
+    color: #1d4f3b;
+}
+  
+.e2 p{
+    color: #374151;
+    margin: 0.5em 0;
+}
+  
+.e3{
+    display: flex;
+    gap: 10px;
+}
+  
+.e3 a img{
+    width: 30px;
+    height: 30px;
+}
+  
+.e4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #d1d5db;
+    margin-top: 20px;
+}
+  
+.e4 p{
+    color: #6b7280;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kopié.com</title>
+    <link rel="stylesheet" type="text/css" href="csskopie.css">
+</head>
+
+<body>
+    <header>
+        <div class="h1">
+            <a><img src="K Logo - Original - 5000x5000.png" class="himg"></a>
+            <h1 class="h3">Kopié</h1>
+            <div class="h2">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">About Us</a>
+                <a href="#">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div>
+        <figure class="k2">
+            <img src="pexels-apgpotr-683039.jpg" class="k1">
+        </figure>
+        </div>
+
+        <div class="k3">
+            <h1 class="k4">Take A Sip?</h1>
+            <p class="k5">Just take a sip of our coffee that is Very <span id="texts">Demure</span></p>
+
+            <style>
+                #texts {
+                    display: inline-block;
+                    
+                    animation: fadeSlide 3s infinite;
+                }
+
+                @keyframes fadeSlide {
+                    0% {
+                        opacity: 0;
+                        transform: translate(0, 50%);
+                    }
+
+                    10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                    }
+
+                    90% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                    }
+
+                    100% {
+                        opacity: 0;
+                        transform: translate(0, -50%);
+                    }
+                }
+            </style>
+
+            <script>
+                const textsElem = document.getElementById('texts');
+
+                const textArray = [
+                    'Demure',
+                    'Delightful',
+                    'Aromatic'
+                ];
+
+                let textIndex = 0;
+
+                textsElem.addEventListener('animationiteration', () => {
+                    textIndex += 1;
+
+                    if (textIndex >= textArray.length) {
+                        textIndex = 0;
+                    }
+
+                    textsElem.innerHTML = textArray[textIndex];
+                });
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <article>
+            <h1 class="cireng">Kopié</h1>
+            <p>DOGSHIT</p>
+        </article>
+    </section>
+</body>
+</html>

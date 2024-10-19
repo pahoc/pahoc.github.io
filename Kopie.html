@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kopié</title>
+    <link rel="stylesheet" type="text/css" href="csskopie.css">
+</head>
+
+<body>
+    <header>
+        <div class="h1">
+            <h1 class="h3">Kopié</h1>
+            <div class="h2">
+                <a href="Kopie.html">Home</a>
+                <a href="MenuKopie.html">Menu</a>
+                <a href="hubungi.html">Hubungi Kami</a>
+                <a href="sosmed.html">Social Media</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img src="pexels-apgpotr-683039.jpg" alt="gambar" class="left-img">
+
+        <div class="title">
+            <h1 class="k4">Take a Bite?</h1>
+            <p class="k5">Just take a bite and give a chance for our food that is very <span id="texts"></span></p>
+            <style>
+                #texts {
+                    display: inline-block;
+                    
+                    animation: fadeSlide 3s infinite;
+                }
+
+                @keyframes fadeSlide {
+                    0% {
+                        opacity: 0;
+                        transform: translate(0, 50%);
+                    }
+
+                    10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                    }
+
+                    90% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                    }
+
+                    100% {
+                        opacity: 0;
+                        transform: translate(0, -50%);
+                    }
+                }
+            </style>
+
+            <script>
+                const textsElem = document.getElementById('texts');
+
+                const textArray = [
+                    'Demure',
+                    'Delightful',
+                    'Aromatic'
+                ];
+
+                let textIndex = 0;
+
+                textsElem.addEventListener('animationiteration', () => {
+                    textIndex += 1;
+
+                    if (textIndex >= textArray.length) {
+                        textIndex = 0;
+                    }
+
+                    textsElem.innerHTML = textArray[textIndex];
+                });
+            </script>
+        </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="konten">
+            <div class="bb">
+                <span class="b1">Our <b>Story</b></span>
+                <h1 class="b2">Brew Life Essentials</h1>
+            </div>
+            <div class="p1">
+                <p>Di dunia yang terus berputar cepat, seringkali kita lupa akan hal-hal esensial dalam hidup. Di Kopié, kami menciptakan ruang bagi kamu untuk melangkah sejenak, mengambil napas, dan menikmati secangkir kopi istimewa. Filosofi ini juga tercermin dalam tagline kami.</p>
+                <p>Kami menggunakan kata "Brew" yang bermakna ganda: ‘Brew’ sebagai simbol dari proses meracik kopi berkualitas, dan ‘Brew’ sebagai metafora untuk meracik momen penting dalam keseharian. Kopié hadir untuk mengingatkanmu akan keindahan dalam kesederhanaan, melalui setiap tegukan yang menenangkan.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="s1">
+        <div class="ceo">
+            <div class="cc">
+                <span class="c1" style="padding-left: 8px;">About <b>CEO</b></span>
+                <h1 class="c2">Our Experts Says</h1>
+            </div>
+            <div class="d1">
+
+                <img src="pawas.jpg" class="d2">
+
+                <div class="d7">
+                    <p class="d5"><b>CEO</b></p>
+                    <p class="d6">Muhammad Fawwaz Maheswara</p>
+                </div>
+
+                <div id="d4-container">
+                    <a href="https://www.instagram.com/pawassz1/profilecard/?igsh=MTZ5eWxramFzbjl1bQ=="><img src="black-instagram-icon.png" class="d4"></a>
+                    <a href="https://www.instagram.com/pawassz1/profilecard/?igsh=MTZ5eWxramFzbjl1bQ=="><img src="x-social-media-black-icon.png" class="d4"></a>
+                    <a href="https://www.instagram.com/pawassz1/profilecard/?igsh=MTZ5eWxramFzbjl1bQ=="><img src="facebook-app-round-icon.png" class="d4"></a>
+                </div>  
+
+                <p class="d3">Kami mewujudkan visi kami untuk menyajikan makanan berkualitas tinggi kepada pelanggan menjadi kenyataan yang dapat diraih. Kopié adalah restoran yang sangat berdedikasi dalam setiap aspek penyajian. Misi Kopié bukan hanya sekadar menyediakan makanan terbaik, tetapi juga berusaha memberi dampak positif pada komunitas melalui pembukaan cabang di lokasi-lokasi strategis dan kemitraan yang menghasilkan pilihan menu inovatif. Keberhasilan kami didorong oleh kolaborasi erat, karena kami bergerak sebagai sebuah tim yang solid.</p>
+
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="e1">
+          <div class="e2">
+            <h4>Customer Center</h4>
+            <p>Jl. Jalan No.8, Jawa Barat, Kota Bandung, Kec. Sumur Bandung</p>
+          </div>
+          <div class="e2">
+            <h4>Contact Us</h4>
+            <p>Email : kopieofficial@gmail.com</p>
+            <p>WhatsApp : 0812-9102-1922</p>
+          </div>
+          <div class="e3">
+            <a href="https://www.instagram.com/pawassz1/profilecard/?igsh=MTZ5eWxramFzbjl1bQ=="><img src="x-social-media-black-icon.png" alt="X" /></a>
+            <a href="https://www.instagram.com/pawassz1/profilecard/?igsh=MTZ5eWxramFzbjl1bQ=="><img src="facebook-app-round-icon.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/pawassz1/profilecard/?igsh=MTZ5eWxramFzbjl1bQ=="><img src="black-instagram-icon.png" alt="Instagram" /></a>
+          </div>
+        </div>
+        <div class="e4">
+          <p>&copy; 2023 Kopié IT, All Rights Reserved</p>
+        </div>
+      </footer>
+
+</body>
+</html>
